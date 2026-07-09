@@ -1,20 +1,21 @@
 import type { Config } from 'tailwindcss';
 
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        paper: '#fbfcf8',
-        navy: '#0c183e',
-        ink: '#223156',
-        muted: '#64708f',
-        cobalt: '#284fc9',
-        cobaltDark: '#173caa',
-        line: '#d8e1ee',
-        softLine: '#e7edf5',
-        success: '#dff3e7',
-        successText: '#2d8060',
+        paper: 'rgb(var(--color-paper) / <alpha-value>)',
+        navy: 'rgb(var(--color-navy) / <alpha-value>)',
+        ink: 'rgb(var(--color-ink) / <alpha-value>)',
+        muted: 'rgb(var(--color-muted) / <alpha-value>)',
+        cobalt: 'rgb(var(--color-cobalt) / <alpha-value>)',
+        cobaltDark: 'rgb(var(--color-cobalt-dark) / <alpha-value>)',
+        line: 'rgb(var(--color-line) / <alpha-value>)',
+        softLine: 'rgb(var(--color-soft-line) / <alpha-value>)',
+        success: 'rgb(var(--color-success) / <alpha-value>)',
+        successText: 'rgb(var(--color-success-text) / <alpha-value>)',
       },
       fontFamily: {
         display: ['Times New Roman', 'Georgia', 'serif'],

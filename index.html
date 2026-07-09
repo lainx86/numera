@@ -10,6 +10,15 @@
     <title>Numera</title>
   </head>
   <body>
+    <script>
+      (() => {
+        const stored = window.localStorage.getItem('numera-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (!stored && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

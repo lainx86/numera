@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FeatureStrip } from './FeatureStrip';
 import { VisualizationPreview } from './VisualizationPreview';
 
@@ -31,24 +32,24 @@ export function Hero() {
         </p>
 
         <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
-          <button
+          <Link
+            to="/get-started"
             className="inline-flex h-[46px] w-full items-center justify-center rounded-md bg-cobalt px-6 text-[16px] font-semibold text-white shadow-button transition hover:bg-cobaltDark sm:w-auto sm:min-w-[230px]"
-            type="button"
           >
             Start Learning Free
             <span className="ml-5 text-xl leading-none" aria-hidden="true">
               &rarr;
             </span>
-          </button>
-          <a
-            href="#modules"
+          </Link>
+          <Link
+            to="/methods"
             className="inline-flex h-[39px] w-full items-center border-b border-cobalt/55 text-[16px] font-semibold text-cobalt transition hover:text-cobaltDark sm:w-auto"
           >
             Browse Methods
             <span className="ml-7 text-xl leading-none" aria-hidden="true">
               &rarr;
             </span>
-          </a>
+          </Link>
         </div>
 
         <FeatureStrip />

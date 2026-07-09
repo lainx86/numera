@@ -3,12 +3,41 @@
 @tailwind utilities;
 
 :root {
+  --color-paper: 251 252 248;
+  --color-navy: 12 24 62;
+  --color-ink: 34 49 86;
+  --color-muted: 100 112 143;
+  --color-cobalt: 40 79 201;
+  --color-cobalt-dark: 23 60 170;
+  --color-line: 216 225 238;
+  --color-soft-line: 231 237 245;
+  --color-success: 223 243 231;
+  --color-success-text: 45 128 96;
+  --grid-major: 198 212 230;
+  --grid-minor: 225 232 241;
   color: #0c183e;
   background: #fbfcf8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --color-paper: 13 20 38;
+  --color-navy: 236 242 255;
+  --color-ink: 210 221 246;
+  --color-muted: 143 157 191;
+  --color-cobalt: 119 155 255;
+  --color-cobalt-dark: 87 126 236;
+  --color-line: 56 70 104;
+  --color-soft-line: 39 51 79;
+  --color-success: 32 73 58;
+  --color-success-text: 169 232 204;
+  --grid-major: 71 88 125;
+  --grid-minor: 40 54 84;
+  color: rgb(var(--color-navy));
+  background: rgb(var(--color-paper));
 }
 
 * {
@@ -23,6 +52,7 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif;
+  background: rgb(var(--color-paper));
 }
 
 button,
@@ -49,10 +79,10 @@ button {
   inset: 0;
   content: '';
   background-image:
-    linear-gradient(rgba(198, 212, 230, 0.46) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(198, 212, 230, 0.46) 1px, transparent 1px),
-    linear-gradient(rgba(225, 232, 241, 0.58) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(225, 232, 241, 0.58) 1px, transparent 1px);
+    linear-gradient(rgb(var(--grid-major) / 0.46) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--grid-major) / 0.46) 1px, transparent 1px),
+    linear-gradient(rgb(var(--grid-minor) / 0.58) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--grid-minor) / 0.58) 1px, transparent 1px);
   background-position:
     -1px -1px,
     -1px -1px,
@@ -70,4 +100,22 @@ button {
     linear-gradient(180deg, rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.82)),
     rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(10px);
+}
+
+.dark .glass-panel {
+  background:
+    linear-gradient(180deg, rgb(18 29 54 / 0.94), rgb(14 23 44 / 0.9)),
+    rgb(14 23 44 / 0.92);
+}
+
+.dark [class*='bg-white'] {
+  background-color: rgb(18 29 54 / 0.78) !important;
+}
+
+.dark [class*='bg-[#f7f9fc]'] {
+  background-color: rgb(10 17 33 / 0.74) !important;
+}
+
+.dark [class*='text-[#'] {
+  color: rgb(var(--color-ink)) !important;
 }
