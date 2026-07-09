@@ -1,20 +1,21 @@
+import { lessonCatalog } from './lessons';
 import { modulePlaceholders } from './modules';
 
 export type SearchEntry = {
   title: string;
   description: string;
   path: string;
-  type: 'Page' | 'Module';
+  type: 'Page' | 'Module' | 'Lesson';
   keywords: string[];
 };
 
 export const searchEntries: SearchEntry[] = [
   {
     title: 'Lessons',
-    description: 'Placeholder lesson catalog for planned Numera learning paths.',
+    description: 'Fundamentals and numerical methods lesson catalog for planned Numera learning paths.',
     path: '/lessons',
     type: 'Page',
-    keywords: ['lessons', 'learning', 'curriculum', 'visualizations'],
+    keywords: ['lessons', 'learning', 'curriculum', 'fundamentals', 'numerical methods'],
   },
   {
     title: 'Methods',
@@ -44,6 +45,13 @@ export const searchEntries: SearchEntry[] = [
     type: 'Page',
     keywords: ['about', 'numera', 'status'],
   },
+  ...lessonCatalog.map((lesson) => ({
+    title: lesson.title,
+    description: lesson.description,
+    path: lesson.path,
+    type: 'Lesson' as const,
+    keywords: [lesson.title, lesson.slug, lesson.category, lesson.badge, 'lesson'],
+  })),
   ...modulePlaceholders.map((module) => ({
     title: module.title,
     description: module.description,

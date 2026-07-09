@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { AboutPage } from './pages/AboutPage';
 import { DocsPage } from './pages/DocsPage';
 import { ExamplesPage } from './pages/ExamplesPage';
+import { FundamentalsPage } from './pages/FundamentalsPage';
 import { GetStartedPage } from './pages/GetStartedPage';
 import { HomePage } from './pages/HomePage';
 import { LessonsPage } from './pages/LessonsPage';
@@ -31,6 +32,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/lessons" element={<LessonsPage />} />
+          <Route path="/fundamentals/:slug" element={<FundamentalsPage />} />
           <Route path="/methods" element={<MethodsPage />} />
           <Route path="/methods/:slug" element={<ModuleDetailPage />} />
           <Route path="/examples" element={<ExamplesPage />} />
