@@ -7,7 +7,5 @@ export type NavigationItem = {
 export const navigationItems: NavigationItem[] = [
   { label: 'Lessons', path: '/lessons', match: '/lessons' },
   { label: 'Methods', path: '/methods', match: '/methods' },
-  { label: 'Examples', path: '/examples', match: '/examples' },
-  { label: 'Docs', path: '/docs', match: '/docs' },
   { label: 'About', path: '/about', match: '/about' },
 ];

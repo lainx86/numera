@@ -25,20 +25,6 @@ export const searchEntries: SearchEntry[] = [
     keywords: ['methods', 'modules', 'numerical methods'],
   },
   {
-    title: 'Examples',
-    description: 'Python and MATLAB implementation previews.',
-    path: '/examples',
-    type: 'Page',
-    keywords: ['examples', 'python', 'matlab', 'code'],
-  },
-  {
-    title: 'Documentation',
-    description: 'Platform guidance for navigation, visualizations, and accessibility.',
-    path: '/docs',
-    type: 'Page',
-    keywords: ['docs', 'documentation', 'guide', 'keyboard'],
-  },
-  {
     title: 'About Numera',
     description: 'Learn what Numera is and how the platform is being developed.',
     path: '/about',

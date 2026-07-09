@@ -4,9 +4,9 @@ import { BookIcon, CodeIcon, DownloadIcon, PlayIcon } from './Icons';
 const features = [
   {
     title: 'Python & MATLAB',
-    description: 'Side-by-side examples',
+    description: 'Foundation paths',
     icon: CodeIcon,
-    path: '/examples',
+    path: '/lessons',
   },
   {
     title: 'Interactive visualizations',
@@ -16,15 +16,15 @@ const features = [
   },
   {
     title: 'Worked examples',
-    description: 'From theory to code',
+    description: 'Method shells',
     icon: BookIcon,
-    path: '/examples',
+    path: '/methods',
   },
   {
-    title: 'Cheat sheets',
-    description: 'Quick reference guides',
+    title: 'Learning paths',
+    description: 'Planned sequence',
     icon: DownloadIcon,
-    path: '/docs',
+    path: '/lessons',
   },
 ];
 

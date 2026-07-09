@@ -13,9 +13,9 @@ const options = [
     path: '/methods',
   },
   {
-    title: 'View examples',
-    description: 'Check Python and MATLAB implementation preview cards.',
-    path: '/examples',
+    title: 'Open fundamentals',
+    description: 'Start from Python or MATLAB foundations before moving into method lessons.',
+    path: '/fundamentals/python',
   },
 ];
 

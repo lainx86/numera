@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { AboutPage } from './pages/AboutPage';
-import { DocsPage } from './pages/DocsPage';
-import { ExamplesPage } from './pages/ExamplesPage';
 import { FundamentalsPage } from './pages/FundamentalsPage';
 import { GetStartedPage } from './pages/GetStartedPage';
 import { HomePage } from './pages/HomePage';
@@ -35,8 +33,6 @@ export default function App() {
           <Route path="/fundamentals/:slug" element={<FundamentalsPage />} />
           <Route path="/methods" element={<MethodsPage />} />
           <Route path="/methods/:slug" element={<ModuleDetailPage />} />
-          <Route path="/examples" element={<ExamplesPage />} />
-          <Route path="/docs" element={<DocsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/get-started" element={<GetStartedPage />} />

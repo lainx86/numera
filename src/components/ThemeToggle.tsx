@@ -13,7 +13,7 @@ function getInitialTheme(): Theme {
     return stored;
   }
 
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return 'light';
 }
 
 type ThemeToggleProps = {

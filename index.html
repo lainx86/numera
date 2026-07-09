@@ -13,8 +13,7 @@
     <script>
       (() => {
         const stored = window.localStorage.getItem('numera-theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (stored === 'dark' || (!stored && prefersDark)) {
+        if (stored === 'dark') {
           document.documentElement.classList.add('dark');
         }
       })();
