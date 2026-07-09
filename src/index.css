@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0c183e;
+  background: #fbfcf8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: Inter, Avenir Next, Segoe UI, Arial, sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(40, 79, 201, 0.16);
+}
+
+.graph-paper {
+  position: relative;
+  isolation: isolate;
+}
+
+.graph-paper::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  content: '';
+  background-image:
+    linear-gradient(rgba(198, 212, 230, 0.46) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(198, 212, 230, 0.46) 1px, transparent 1px),
+    linear-gradient(rgba(225, 232, 241, 0.58) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(225, 232, 241, 0.58) 1px, transparent 1px);
+  background-position:
+    -1px -1px,
+    -1px -1px,
+    -1px -1px,
+    -1px -1px;
+  background-size:
+    36px 36px,
+    36px 36px,
+    12px 12px,
+    12px 12px;
+}
+
+.glass-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.82)),
+    rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(10px);
+}
