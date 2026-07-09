@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import { MoonIcon, SunIcon } from './Icons';
 
 type Theme = 'light' | 'dark';
+const themeStorageKey = 'numera-theme-preference';
 
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') {
     return 'light';
   }
 
-  const stored = window.localStorage.getItem('numera-theme');
+  const stored = window.localStorage.getItem(themeStorageKey);
   if (stored === 'light' || stored === 'dark') {
     return stored;
   }
@@ -25,7 +26,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
-    window.localStorage.setItem('numera-theme', theme);
+    window.localStorage.setItem(themeStorageKey, theme);
   }, [theme]);
 
   const nextTheme = theme === 'dark' ? 'light' : 'dark';

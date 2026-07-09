@@ -15,7 +15,7 @@ export const fundamentalsLessons: LessonItem[] = [
   {
     title: 'Python Fundamentals',
     slug: 'python',
-    path: '/fundamentals/python',
+    path: '/lessons/fundamentals/python/variables-and-data-types',
     description: 'Learn the core Python concepts needed for scientific and numerical computing.',
     category: 'fundamentals',
     actionText: 'Open learning path',
@@ -24,7 +24,7 @@ export const fundamentalsLessons: LessonItem[] = [
   {
     title: 'MATLAB Fundamentals',
     slug: 'matlab',
-    path: '/fundamentals/matlab',
+    path: '/lessons/fundamentals/matlab/vectors-and-matrices',
     description: 'Learn the core MATLAB concepts needed for matrix-based numerical computing.',
     category: 'fundamentals',
     actionText: 'Open learning path',
@@ -40,7 +40,7 @@ export const numericalMethodLessons: LessonItem[] = Array.from({ length: 5 }, (_
     order,
     title: `Method Placeholder ${padded}`,
     slug: `method-placeholder-${padded}`,
-    path: `/methods/method-placeholder-${padded}`,
+    path: `/lessons/numerical-methods/method-placeholder-${padded}`,
     description: 'A planned numerical methods lesson that will later include theory, visualization, and code implementation.',
     category: 'numerical-methods',
     actionText: 'Open lesson shell',

@@ -15,7 +15,7 @@ const options = [
   {
     title: 'Open fundamentals',
     description: 'Start from Python or MATLAB foundations before moving into method lessons.',
-    path: '/fundamentals/python',
+    path: '/lessons/fundamentals/python/variables-and-data-types',
   },
 ];
 

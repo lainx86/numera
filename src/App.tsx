@@ -5,6 +5,7 @@ import { AboutPage } from './pages/AboutPage';
 import { FundamentalsPage } from './pages/FundamentalsPage';
 import { GetStartedPage } from './pages/GetStartedPage';
 import { HomePage } from './pages/HomePage';
+import { LessonReaderPage } from './pages/LessonReaderPage';
 import { LessonsPage } from './pages/LessonsPage';
 import { MethodsPage } from './pages/MethodsPage';
 import { ModuleDetailPage } from './pages/ModuleDetailPage';
@@ -30,6 +31,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/lessons" element={<LessonsPage />} />
+          <Route path="/lessons/:courseType/:courseSlug/:lessonSlug" element={<LessonReaderPage />} />
+          <Route path="/lessons/:courseType/:lessonSlug" element={<LessonReaderPage />} />
           <Route path="/fundamentals/:slug" element={<FundamentalsPage />} />
           <Route path="/methods" element={<MethodsPage />} />
           <Route path="/methods/:slug" element={<ModuleDetailPage />} />

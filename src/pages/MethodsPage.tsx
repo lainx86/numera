@@ -32,8 +32,8 @@ export function MethodsPage() {
       />
 
       <section className="pt-9">
-        <div className="flex flex-col gap-4 rounded-[8px] border border-line bg-white/66 p-4 shadow-card sm:flex-row sm:items-center sm:justify-between">
-          <label className="block flex-1">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <label className="block max-w-xl flex-1">
             <span className="sr-only">Search methods</span>
             <input
               className="h-11 w-full rounded-md border border-line bg-white/85 px-4 text-[15px] text-ink outline-none transition focus:border-cobalt focus:ring-2 focus:ring-cobalt/15"

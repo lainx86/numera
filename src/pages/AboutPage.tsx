@@ -17,7 +17,7 @@ export function AboutPage() {
           ['Development status', 'The landing page, routing, and interaction shell are in place. Curriculum planning and final lesson content come later.'],
           ['Scope', 'This template avoids institutional claims, accounts, payment, and backend features while the learning structure is being planned.'],
         ].map(([title, body]) => (
-          <article key={title} className="rounded-[8px] border border-line bg-white/70 p-6 shadow-card">
+          <article key={title} className="rounded-[8px] border border-line bg-white/70 p-5 shadow-card">
             <StatusBadge>{title === 'Development status' ? 'Template in progress' : 'Platform note'}</StatusBadge>
             <h2 className="mt-4 text-[23px] font-semibold text-navy">{title}</h2>
             <p className="mt-3 text-[16px] leading-7 text-muted">{body}</p>
